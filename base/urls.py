@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^api-token-refresh/', refresh_jwt_token),
     url(r'snippets/', include('base.apps.snippets.urls', namespace="snippets")),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^docs/', include('rest_framework_swagger.urls'))
 )
